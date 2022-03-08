@@ -9,27 +9,37 @@
     <title>Xomato</title>
 </head>
 <style>
-    .content {
-        width: 100vw;
-        height: 100vh;
+    .template {
+        width: 80%;
+        height: 300px;
+        box-shadow: 10px 10px 10px red;
     }
     
-    .choice {
-        width: 30%;
-        height: 50%;
-        border: 2px solid black;
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 5px;
-        float: left;
+    .template:hover {
+        width: 90%;
+        height: 400px;
+        box-shadow: 10px 10px 10px red;
     }
     
-    .restaurants {
-        width: 67%;
-        margin-top: 5px;
-        height: 93.75%;
-        border: 2px solid black;
+    .rest-img {
         float: left;
+        width: 50%;
+        height: 100%;
+        margin: 10px;
+    }
+    
+    .rest-img img {
+        width: 90%;
+        height: 90%;
+        border-radius: 10%;
+    }
+    
+    .rest-info h2 {
+        margin: 10px;
+    }
+    
+    .rest-info p {
+        margin-top: 5px;
     }
 </style>
 
@@ -42,11 +52,81 @@
     </header>
     <main class="content">
         <h1 style="text-align: center; margin: 10px;">Listing Page</h1>
-        <div class="choice">
-
+        <div class="filter">
+            <h2 style="text-align: center;margin-top: 10px;">Filter</h2>
+            <h4 style="text-align: center;margin-top: 7px;">Cuisine Filter</h4>
+            <div class="food-type">
+                <input type="radio" id="all">
+                <label for="all">All</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="NorthIndian">
+                <label for="NorthIndian">North Indian</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="SouthIndian">
+                <label for="SouthIndian">South Indian</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="Chinese">
+                <label for="Chinese">Chinese</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="Italian">
+                <label for="Italian">Italian</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="Mexican">
+                <label for="Mexican">Mexican</label>
+            </div>
+            <div class="food-type">
+                <input type="radio" name="food" id="Iranian">
+                <label for="Iranian">Iranian</label>
+            </div>
+            <h4 style="text-align: center;margin-top: 7px;">Cost Filter</h4>
+            <div class="cost-range">
+                <input type="radio" name="price" id="All">
+                <label for="All">All</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="100-300">
+                <label for="100-300">100-300</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="301-500">
+                <label for="301-500">301-500</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="501-700">
+                <label for="501-700">501-700</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="700-900">
+                <label for="700-900">700-900</label>
+            </div>
+            <div class="cost-range">
+                <input type="radio" name="price" id="900-1500">
+                <label for="900-1500">900-1500</label>
+            </div>
         </div>
         <div class="restaurants">
-
+            <div class="template">
+                <div class="rest-img">
+                    <img src="https://i.ibb.co/M670rMM/pizza.webp" alt="pizza">
+                </div>
+                <div class="rest-info">
+                    <h2>Dada's Pizza</h2>
+                    <p>
+                        New Vision Colony, Najafgarh ,New Delhi - 110072
+                    </p>
+                    <p>
+                        <b>minimum price</b> : 5$
+                    </p>
+                    <p>
+                        <b>maximum price</b> :100$
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

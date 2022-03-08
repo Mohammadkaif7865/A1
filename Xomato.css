@@ -243,3 +243,35 @@ footer p {
 .foot {
     margin-top: 20px;
 }
+
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.filter {
+    width: 20%;
+    height: 70%;
+    border: 2px solid blue;
+    margin-top: 5px;
+    margin-left: 10%;
+    margin-right: 7px;
+    float: left;
+}
+
+.restaurants {
+    width: 67%;
+    margin-top: 5px;
+    height: 93.75%;
+    float: left;
+}
+
+.food-type {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.cost-range {
+    margin-left: 10px;
+    margin-top: 5px;
+}
