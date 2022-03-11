@@ -14,7 +14,7 @@ header {
 header h1 {
     float: left;
     margin: 20px;
-    font-size: 54px;
+    font-size: 2em;
     color: white;
 }
 
@@ -131,8 +131,8 @@ header h1 {
 
 .cards {
     width: 29%;
-    margin-bottom: 40px;
-    margin-right: 20px;
+    margin-bottom: 8%;
+    margin-right: 4%;
     height: 40%;
     float: left;
     animation-name: pop;
@@ -235,10 +235,19 @@ footer p {
     box-shadow: 10px 10px 20px #908a8afc;
 }
 
+@media screen and (max-width: 720px) {
+    .filter {
+        display: none;
+    }
+    #myVideo {
+        display: none;
+    }
+}
+
 .restaurants {
     width: 67%;
     margin: 5px;
-    height: 93.75%;
+    height: 90%;
     float: left;
     overflow: scroll;
 }
@@ -332,4 +341,25 @@ footer p {
     width: 50px;
     float: left;
     margin: 5px;
+}
+
+.pagination {
+    float: right;
+    text-align: center;
+    width: 67%;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 7px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.pagination a.active {
+    background-color: #ff5b5bfc;
+    color: white;
 }
