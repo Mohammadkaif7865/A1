@@ -14,7 +14,8 @@ header {
 header h1 {
     float: left;
     margin: 20px;
-    font-size: 2em;
+    font-size: 40px;
+    font-family: bold;
     color: white;
 }
 
@@ -34,10 +35,19 @@ header h1 {
     margin-left: 20px;
 }
 
+@media screen and (max-width:1070px) {
+    .logo1 {
+        display: none;
+    }
+    .filter {
+        display: none;
+    }
+}
+
 .social {
     float: right;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-left: 5px;
     margin-top: 23px;
     border-radius: 15px;
@@ -108,6 +118,34 @@ header h1 {
 .quick-search {
     margin: auto;
     height: 600px;
+    overflow: scroll;
+}
+
+.quick-search::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Track */
+
+.quick-search::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+.quick-search::-webkit-scrollbar-thumb {
+    background: #ff5b5bfc;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+.quick-search::-webkit-scrollbar-thumb:hover {
+    background: #ff5b5bfc;
 }
 
 .quick-search h1 {
@@ -130,11 +168,12 @@ header h1 {
 }
 
 .cards {
-    width: 200px;
+    width: 29%;
     margin-bottom: 40px;
-    margin-right: 15px;
-    height: 150px;
+    margin-right: 20px;
+    height: 40%;
     float: left;
+    font-size: 12px;
     animation-name: pop;
     animation-iteration-count: infinite;
     animation-duration: 5s;
@@ -147,33 +186,33 @@ header h1 {
     }
     25% {
         box-shadow: 10px 10px 20px #908a8afc;
-        width: 200px;
+        width: 31%;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 150px;
+        height: 45%;
         transform: rotate(4deg);
     }
     50% {
         box-shadow: 10px 10px 15px #908a8afc;
-        width: 200px;
+        width: 31%;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 150px;
+        height: 45%;
         transform: rotate(0deg);
     }
     75% {
         box-shadow: 10px 10px 15px #908a8afc;
-        width: 200px;
+        width: 31%;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 150px;
+        height: 45%;
         transform: rotate(-4deg);
     }
     100% {
-        width: 200px;
+        width: 29%;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 150px;
+        height: 40%;
     }
 }
 
@@ -233,15 +272,6 @@ footer p {
     float: left;
     border-radius: 10%;
     box-shadow: 10px 10px 20px #908a8afc;
-}
-
-@media screen and (max-width: 1079px) {
-    .filter {
-        display: none;
-    }
-    .myVideo {
-        display: none;
-    }
 }
 
 .restaurants {
@@ -337,8 +367,8 @@ footer p {
 }
 
 .fetch img {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     float: left;
     margin: 5px;
 }
