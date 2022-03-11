@@ -14,7 +14,7 @@ header {
 header h1 {
     float: left;
     margin: 20px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: bold;
     color: white;
 }
@@ -41,6 +41,11 @@ header h1 {
     }
     .filter {
         display: none;
+    }
+    .pagination {
+        float: left;
+        text-align: center;
+        width: 67%;
     }
 }
 
@@ -168,10 +173,10 @@ header h1 {
 }
 
 .cards {
-    width: 29%;
+    width: 200px;
     margin-bottom: 40px;
-    margin-right: 20px;
-    height: 40%;
+    margin-right: 15px;
+    height: 150px;
     float: left;
     font-size: 12px;
     animation-name: pop;
@@ -186,33 +191,33 @@ header h1 {
     }
     25% {
         box-shadow: 10px 10px 20px #908a8afc;
-        width: 31%;
+        width: 200px;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 45%;
+        height: 150px;
         transform: rotate(4deg);
     }
     50% {
         box-shadow: 10px 10px 15px #908a8afc;
-        width: 31%;
+        width: 200px;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 45%;
+        height: 150px;
         transform: rotate(0deg);
     }
     75% {
         box-shadow: 10px 10px 15px #908a8afc;
-        width: 31%;
+        width: 200px;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 45%;
+        height: 150px;
         transform: rotate(-4deg);
     }
     100% {
-        width: 29%;
+        width: 200px;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 40%;
+        height: 150px;
     }
 }
 
