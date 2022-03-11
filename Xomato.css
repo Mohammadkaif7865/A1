@@ -130,10 +130,10 @@ header h1 {
 }
 
 .cards {
-    width: 29%;
-    margin-bottom: 8%;
-    margin-right: 4%;
-    height: 40%;
+    width: 200px;
+    margin-bottom: 40px;
+    margin-right: 15px;
+    height: 150px;
     float: left;
     animation-name: pop;
     animation-iteration-count: infinite;
@@ -147,33 +147,33 @@ header h1 {
     }
     25% {
         box-shadow: 10px 10px 20px #908a8afc;
-        width: 31%;
+        width: 200px;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 45%;
+        height: 150px;
         transform: rotate(4deg);
     }
     50% {
         box-shadow: 10px 10px 15px #908a8afc;
-        width: 31%;
+        width: 200px;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 45%;
+        height: 150px;
         transform: rotate(0deg);
     }
     75% {
         box-shadow: 10px 10px 15px #908a8afc;
-        width: 31%;
+        width: 200px;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 45%;
+        height: 150px;
         transform: rotate(-4deg);
     }
     100% {
-        width: 29%;
+        width: 200px;
         margin-bottom: 40px;
         margin-right: 15px;
-        height: 40%;
+        height: 150px;
     }
 }
 
