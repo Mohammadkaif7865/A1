@@ -235,11 +235,11 @@ footer p {
     box-shadow: 10px 10px 20px #908a8afc;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1079px) {
     .filter {
         display: none;
     }
-    #myVideo {
+    .myVideo {
         display: none;
     }
 }
