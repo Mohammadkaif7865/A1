@@ -5,6 +5,11 @@
     font-family: "Helvetica Neue", Helvetica, Arial;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 header {
     height: 94px;
     background-color: #ff5b5bfc;
@@ -209,7 +214,7 @@ a {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(54, 46, 46);
     color: white;
     height: 150px;
     margin-top: 5%;
@@ -229,11 +234,14 @@ footer p {
 
 .filter {
     width: 200px;
-    height: 500px;
+    /* height: 500px; */
     margin-top: 5px;
     margin-right: 7px;
     margin-left: 7px;
     float: left;
+    position: sticky;
+    top: 0px;
+    height: 100%;
     border-radius: 10%;
     box-shadow: 10px 10px 20px #908a8afc;
     border-top: 10px solid #ff5b5bfc;
@@ -367,6 +375,10 @@ footer p {
     margin: 20px;
     box-shadow: 10px 10px 20px #908a8afc;
     border-radius: 20%;
+    top: 0px;
+    height: 100%;
+    position: sticky;
+    background-color: white;
     border-top: 10px solid #ff5b5bfc;
     border-bottom: 10px solid #ff5b5bfc;
 }
@@ -378,8 +390,137 @@ footer p {
     border-right: 5px solid black;
 }
 
+.description {
+    padding: 10px;
+    margin: 10px;
+}
+
+.description p {
+    margin-top: 4px;
+}
+
+.d-rest-image {
+    width: 45%;
+    height: 350px;
+    display: inline-block;
+}
+
+.d-rest-image img {
+    border-radius: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.d-rest-info {
+    margin-left: 20px;
+    float: right;
+    width: 50%;
+}
+
+.rest-content {
+    width: 100%;
+}
+
+#ppd .rest-aside {
+    width: 30%;
+    float: left;
+    text-align: right;
+    padding: 2%;
+    position: sticky;
+    top: 0px;
+    height: 100%;
+}
+
+#ppd .rest-aside2 {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    border-top: 5px solid rgb(148, 140, 140);
+    border-bottom: 5px solid rgb(148, 140, 140);
+    position: sticky;
+    background-color: white;
+    top: 0px;
+    height: 100%;
+}
+
+#ppd .rest-aside2 h5 {
+    border: 3px solid black;
+    padding: 8px;
+    display: inline-block;
+    border-radius: 20%;
+    margin: 8px;
+}
+
+#ppd .rest-aside2 h5:hover {
+    border: 3px solid gold;
+    color: gold;
+    padding: 10px;
+    border-radius: 20%;
+    margin: 10px;
+}
+
+.rest-main {
+    width: 67%;
+    display: inline-block;
+    border-left: 4px solid rgb(221, 206, 206);
+}
+
+.rest-main h2 {
+    text-align: center;
+}
+
+.rest-aside a h4:hover {
+    color: gold;
+    border-right: 5px solid gold;
+}
+
+.rest-aside a h4 {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.demo {
+    height: 250px;
+    display: inline-block;
+    width: 90%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.demo h2,
+.demo h3,
+.demo h5 {
+    margin-top: 2px;
+}
+
+.demo:hover {
+    transform: scale(1.1);
+}
+
+.left {
+    height: 100%;
+    width: 45%;
+    display: inline-block;
+}
+
+.left img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    float: right;
+    padding: 5px;
+}
+
 @media screen and (min-width: 836px) {
     .filter2 {
+        display: none;
+    }
+    .rest-aside2 {
         display: none;
     }
 }
@@ -387,6 +528,22 @@ footer p {
 @media screen and (max-width:465px) {
     .logo1 {
         display: none;
+    }
+    .description {
+        padding: 5px;
+        font-size: 10px;
+        margin: 5px;
+    }
+    .d-rest-info {
+        margin-left: 10px;
+        float: right;
+        width: 50%;
+    }
+    .fetch h2 {
+        font-size: 15px;
+    }
+    .fetch h5 {
+        font-size: 10px;
     }
 }
 
@@ -415,12 +572,12 @@ footer p {
         padding: 10px;
         width: 33%;
     }
-    .fetch h2 {
+    /* .fetch h2 {
         font-size: 15px;
     }
     .fetch h5 {
         font-size: 10px;
-    }
+    } */
     .cards {
         width: 300px;
         margin-bottom: 40px;
@@ -508,5 +665,14 @@ footer p {
     }
     .search h1 {
         font-size: 20px;
+    }
+    .rest-main {
+        width: 100%;
+    }
+    .rest-aside {
+        display: none;
+    }
+    .d-rest-image {
+        height: 250px;
     }
 }
